@@ -1,38 +1,74 @@
-.App {
+body {
+  background-color: rgb(70, 99, 34);
+}
+
+.Calculator {
+  box-sizing: border-box;
   text-align: center;
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Calcucontainer{
+  background-color: rgb(19, 155, 103);
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: auto;
+  padding: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Displaycon{
+  height: 80px;
+  background-color: rgb(4, 36, 18);
+  border: 1px solid black;
+  color: aliceblue;
+}
+.Displaycon{
+  font-size: 1rem;
+  text-align: right;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: 50px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Buttons{
+  background-color: rgb(0, 61, 31);
+  display: grid;
+  grid-gap: 4px;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: none;
+  border: none;
+  padding: 5px;
+  height: 300px;
+  border-radius: 5px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.clear-Keybutton {
+  grid-column: span 2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clear-button:hover {
+  background-color: #ff4444; /* Darker on hover */
+}
+
+.Buttons > Button:hover {
+  background-color: #39eca4; /* Darker on hover */
+}
+
+
+.Buttons > Button{
+  font-size: 2em;
+  background-color: rgb(198, 198, 198);
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
+  transition: background-color .2s ease, transform .2s ease;
+  border: none;
+  border-radius: 5px;
+  
+}
+
+.MAGCALAS{
+   font-size: 2em;
+   grid-column: span 3;
 }
